@@ -1,0 +1,23 @@
+.button {
+	padding: 6px;
+	border-radius: 4px;
+	color: var(--c-black);
+	font-size: 16px;
+	margin-bottom: 10px;
+	border: 0px;
+
+	cursor: pointer;
+}
+
+.button.-transparent {
+	background: transparent;
+}
+
+.button.-white {
+	color: var(--c-white);
+}
+
+.button.-s {
+	font-size: 16px;
+	margin-bottom: 0px;
+}

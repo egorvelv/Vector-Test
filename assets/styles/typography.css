@@ -1,0 +1,24 @@
+.title {
+	font-size: 20px;
+	margin-bottom: 12.5px;
+}
+
+.subtitle {
+	font-size: 16.5px;
+	margin-bottom: 12.5px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.text {
+	font-size: 14px;
+	margin-bottom: 12.5px;
+}
+
+.title.-gray {
+	color: var(--c-gray);
+}
+
+.subtitle.-gray {
+	color: var(--c-gray);
+}

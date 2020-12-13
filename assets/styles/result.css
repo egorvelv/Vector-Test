@@ -1,0 +1,21 @@
+.result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+}
+
+.result.-hidden {
+	display: none;
+}
+
+.result__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.result__img {
+    max-width: 75%;
+    margin-bottom: 15px;
+}

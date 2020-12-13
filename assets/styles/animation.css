@@ -1,0 +1,40 @@
+.animation {
+	width: 100%;
+	position: relative;
+	display: none;
+
+}
+
+.ball {
+	max-width: 6%;
+	position: absolute;
+	bottom: 0px;
+	animation: move__forward 7s infinite, spin 7s infinite;
+
+}
+
+.beam {
+	height: 200px;
+	width: 12.5px;
+	border: 1.5px black solid;
+}
+
+@keyframes move__forward {
+	from {
+		left: 15%; 
+	}
+
+    to {
+  		left: 85%;
+  	}	
+}
+
+@keyframes spin { 
+    from { 
+       	transform: rotate(0deg); 
+    } 
+
+    to { 
+        transform: rotate(680deg); 
+    }
+}

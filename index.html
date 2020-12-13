@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Кто вы из Вектора?</title>
+	<meta name="description" content="Пройдите тест, который покажет, какой вы игрок из вашей любимой команды">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<meta name="og:title" content="Кто вы из Вектора?">
+	<meta name="og:description" content="Пройдите тест, который покажет, какой вы игрок из вашей любимой команды">
+
+	<link rel="icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/base.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/hero.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/header.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/container.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/variables.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/scroll.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/question.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/content.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/button.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/test.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/result.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/typography.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/start.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/animation.css">
+
+	<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+</head>
+<body>
+	<div class="container">
+		<section class="hero" id="hero">
+			<header class="header">
+				<img src="./assets/img/logo__vector.png" alt="Vector's logo" class="logo">
+				<nav class="nav">
+					<a href="#hero" class="nav__link">Главный экран</a>
+					<a href="#test" class="nav__link">Опрос</a>
+				</nav>
+				<div class="header__links">
+					<a href="https://vk.com/fcvector_1" class="header__link">Группа Вектора</a>
+				</div>
+			</header>
+			<div class="hero__content">
+				<h1 class="title -white">Тест: Какой вы игрок из Вектора?</h1>
+				<h3 class="subtitle -white">Давно хотели узнать, каким игроком вашей любимой (а может и нет) команды вы являетесь? Тогда этот тест точно для вас!</h3>
+			</div>
+
+			<div class="scroll -down">
+				<a href="#test" class="button -transparent -white -s">Тест</a>
+				<a href="#test" class="scroll__arrow"></a>
+			</div>
+			
+		</section>
+		<section class="test" id="test">
+			<div class="content">
+				<div class="start" id="js-start">
+					<h3 class="title">Добро пожаловать в сам по себе тест!</h3>
+					<h5 class="subtitle"> Дорогой читатель, надеюсь ты успел познакомиться с историей команды, перед прохождением теста. Жмакай на кнопку, чтобы начать, если ты уверен, что готов</h5>
+					<button class="button" id="js-startButton" onclick="startTest()">Начать тест</button>
+
+				</div>
+
+				<div class="question -hidden" id="js-question">
+					<div class="question__header">
+						<div class="question__count">
+							<span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionsCount"></span>
+						</div>
+
+						<h3 class="title" id="js-questionText"></h3>
+					</div>
+
+					<ul class="question__answers" id="js-questionAnswers"></ul>
+				</div>
+
+				<div class="result -hidden" id="js-result">
+					<div class="result__info">
+						<h3 class="title" id="js-resultTitle"></h3>
+						<p class="text" id="js-resultDesc"></p>
+
+						<img src="" alt="Картинка с результатом" class="result__img" id="js-resultImg">
+					</div>
+					
+					<button class="button" id="js-restart" onclick="restartTest()">Пройти тест заново</button>
+					<div class="div" id="js-resultShare"></div>
+
+				</div>
+
+				<div class="animation">
+					<img src="./assets/img/ball.jpg" alt="Ball" class="ball">
+					<div class="goal">
+						<div class="beam">
+							<div class="net"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="./assets/scripts/resultData.js"></script>
+	<script type="text/javascript" src="./assets/scripts/questions.js"></script>
+	<script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body, h1, h2, h3, h4, p, ul, ol, li {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica";
+}
+
+img {
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ul {
+	list-style-type: none;
+}
