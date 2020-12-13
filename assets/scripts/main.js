@@ -65,7 +65,7 @@ function showTestResults() {
 			{
 				url: 'https://solvery.io/',
 				title: 'Ничего себе! Да я же: ' + resultData[resultKey].title + '! Пройди тест и тоже узнай, кто ты!',
-				image: '' + resultData[resultKey].image,
+				image: 'https://egorvelv.github.io/Vector-Test/' + resultData[resultKey].image,
 				noparse: true,
 			},
 			{
