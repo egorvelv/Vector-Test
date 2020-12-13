@@ -63,7 +63,7 @@ function showTestResults() {
 
  	document.getElementById('js-resultShare').innerHTML = VK.Share.button(
 			{
-				url: 'https://solvery.io/',
+				url: 'https://github.com/egorvelv',
 				title: 'Ничего себе! Да я же: ' + resultData[resultKey].title + '! Пройди тест и тоже узнай, кто ты!',
 				image: 'https://egorvelv.github.io/Vector-Test/' + resultData[resultKey].image,
 				noparse: true,
