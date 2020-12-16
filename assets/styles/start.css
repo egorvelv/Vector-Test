@@ -11,4 +11,28 @@
 
 .start__bg {
 	margin-bottom: 12.5px;
+	max-width: 108.5%;
+}
+
+@media screen and (max-width: 1023px) {
+	.start__bg {
+		max-width: 115%;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.start__bg {
+		max-width: 120%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.start {
+		width: 100%;
+		padding: 0px 10px;
+	}
+
+	.start__bg {
+		max-width: 85%;
+	}
 }

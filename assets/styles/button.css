@@ -5,7 +5,7 @@
 	font-size: 16px;
 	margin-bottom: 10px;
 	border: 0px;
-	width: 100%;
+	background-color: var(--c-gray);
 	cursor: pointer;
 }
 
@@ -17,7 +17,27 @@
 	color: var(--c-white);
 }
 
+.button.-blue {
+	border-color: blue;
+}
+
 .button.-s {
 	font-size: 16px;
 	margin-bottom: 0px;
+}
+
+.button.-transparent {
+	background-color: transparent;
+	border: none;
+	text-align: left;
+}
+
+.button.-transparent:hover {
+	background-color: var(--c-gray);
+}
+
+@media screen and (max-width: 767px) {
+	.button {
+		width: 100%;
+	}
 }

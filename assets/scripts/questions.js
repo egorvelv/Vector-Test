@@ -105,7 +105,7 @@ const questions = [
 			},
 			{
 				answerText: 'В каждом матче',
-				value: 4,
+				value: 3,
 			},
 			{
 				answerText: 'Я все уже несколько раз сказал...',

@@ -22,3 +22,17 @@
 	max-width: 45%;
 	max-height: 45%;
 }
+
+@media screen and (max-width: 767px) {
+	.question {
+		padding: 0px 10px;
+	}
+
+	.question__desc {
+		width: 65%;
+	}
+
+	.question__photo {
+		max-width: 65%;
+	}
+}

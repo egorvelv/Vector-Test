@@ -17,7 +17,7 @@ function prepareAnswersMarkdown(answers) {
 	let result = '';
 
 	answers.forEach(answer => {
-		result += '<li><button class="button" onclick="onAnswerChoose(' + answer.value + ')">' + answer.answerText + '</button></li>';
+		result += '<li><button class="button -transparent" onclick="onAnswerChoose(' + answer.value + ')">' + answer.answerText + '</button></li>';
 	})
 
 	return result;
@@ -48,9 +48,9 @@ function showTestResults() {
 		resultKey = 'Vasilyev'
 	} else if (testScore >= 12 && testScore < 17) {
 		resultKey = 'Baranov'
-	} else if (testScore >= 17 && testScore < 20) {
+	} else if (testScore >= 17 && testScore <= 20) {
 		resultKey = 'Turov'
-	} else if (testScore >= 20) {
+	} else if (testScore = 21) {
 		resultKey = 'bestSupporter'
 	}
 

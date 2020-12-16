@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 20px;
+	padding: 15px 20px;
 	background-color: transparent;
 	width: 75.5%;
 }
@@ -19,4 +19,27 @@
 .header__link {
 	color: var(--c-black);
 	font-weight: 600;
+	background-color: var(--c-white);
+	padding: 2.5px;
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		flex-direction: column;
+	}
+
+	.header__logo {
+		display: none;
+	}
+
+	.header__links {
+		width: 50%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.header__links {
+		width: 75%;
+	}
 }
