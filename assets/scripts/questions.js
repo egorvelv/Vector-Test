@@ -5,11 +5,11 @@ const questions = [
 		answers: [
 			{
 				answerText: 'Очень, победа есть цель состязания',
-				value: 4,
+				value: 3,
 			},
 			{
 				answerText: 'Победа, не главное, главное участие',
-				value: 3,
+				value: 4,
 			},
 			{
 				answerText: 'Зачем играть, если на скамейке теплее',
@@ -28,7 +28,7 @@ const questions = [
 		answers: [
 			{
 				answerText: 'Мячик можно подержать и подольше',
-				value: 0,
+				value: 2,
 			},
 			{
 				answerText: 'Партнеры отлично играют, также как и я',
@@ -36,7 +36,7 @@ const questions = [
 			},
 			{
 				answerText: 'Пас это совсем не мое, лучше сделаю за других',
-				value: 2,
+				value: 0,
 			},
 			{
 				answerText: 'Зачем приезжать на игры, ну правда, расскажите',
@@ -59,7 +59,7 @@ const questions = [
 			},
 			{
 				answerText: 'Бываю на 2-3 играх за все время',
-				value: 0,
+				value: 1,
 			},
 			{
 				answerText: 'А зачем это делать?',
@@ -74,7 +74,7 @@ const questions = [
 		answers: [
 			{
 				answerText: 'Уважительно, не толкаюсь не спорю',
-				value: 4,
+				value: 3,
 			},
 			{
 				answerText: 'Могу начать стычку из-за простых вещей',
@@ -82,7 +82,7 @@ const questions = [
 			},
 			{
 				answerText: 'Могу сказать "пару ласковых" соперникам',
-				value: 2,
+				value: 1,
 			},
 			{
 				answerText: 'Я не приезжаю на игры, хватит уже спрашивать!',
