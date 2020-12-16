@@ -7,6 +7,7 @@
 }
 
 .question {
+	height: 90%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -14,9 +15,10 @@
 }
 
 .question__desc {
-	width: 50%
+	width: 45%
 }
 
 .question__photo {
-	max-width: 50%;
+	max-width: 45%;
+	max-height: 45%;
 }

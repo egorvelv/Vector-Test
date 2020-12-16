@@ -8,3 +8,7 @@
 .start.-hidden {
 	display: none;
 }
+
+.start__img {
+	margin-bottom: 12.5px;
+}
