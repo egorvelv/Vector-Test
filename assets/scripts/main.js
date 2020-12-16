@@ -10,14 +10,11 @@ function setNextQuestionData() {
 	document.getElementById('js-questionText').innerText = questions[currentQuestion].questionText;
 	document.getElementById('js-questionNumber').innerText = currentQuestion + 1;
 	document.getElementById('js-questionAnswers').innerHTML = prepareAnswersMarkdown(questions[currentQuestion].answers);
+	document.getElementById('js-questionPhoto').src = questions[currentQuestion].image;
 }
 
 function prepareAnswersMarkdown(answers) {
 	let result = '';
-
-	// for (let i = 0; i < answers.length; i++) {
-	// 	result += '<li><button class="question__answer">' + answers[i].answerText + '</button></li>';
-	// }
 
 	answers.forEach(answer => {
 		result += '<li><button class="button" onclick="onAnswerChoose(' + answer.value + ')">' + answer.answerText + '</button></li>';
@@ -63,7 +60,7 @@ function showTestResults() {
 
  	document.getElementById('js-resultShare').innerHTML = VK.Share.button(
 			{
-				url: 'https://github.com/egorvelv',
+				url: 'https://egorvelv.github.io/Vector-Test/',
 				title: 'Ничего себе! Да я же: ' + resultData[resultKey].title + '! Пройди тест и тоже узнай, кто ты!',
 				image: 'https://egorvelv.github.io/Vector-Test/' + resultData[resultKey].image,
 				noparse: true,
@@ -88,4 +85,3 @@ function startTest() {
 	document.getElementById('js-question').classList.remove('-hidden');
 	initQuestions();
 }
-

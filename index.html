@@ -37,9 +37,12 @@
 	<div class="container">
 		<section class="hero" id="hero">
 			<header class="header">
-				<img src="./assets/img/logo__vector.png" alt="Vector's logo" class="logo">
+				<div class="header__logo">
+					<img src="./assets/img/logo__vector.png" alt="Vector's logo" class="logo">
+				</div>
+				
 				<nav class="nav">
-					<a href="#hero" class="nav__link">Главный экран</a>
+					<a href="#hero" class="nav__link">Главная</a>
 					<a href="#test" class="nav__link">Тест</a>
 				</nav>
 				<div class="header__links">
@@ -67,37 +70,38 @@
 				</div>
 
 				<div class="question -hidden" id="js-question">
-					<div class="question__header">
-						<div class="question__count">
-							<span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionsCount"></span>
+					<div class="question__desc">
+						<div class="question__header">
+							<div class="question__count">
+								<span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionsCount"></span>
+							</div>
+
+							<h3 class="title" id="js-questionText"></h3>
 						</div>
 
-						<h3 class="title" id="js-questionText"></h3>
+						<ul class="question__answers" id="js-questionAnswers"></ul>
 					</div>
-
-					<ul class="question__answers" id="js-questionAnswers"></ul>
+					
+					<div class="question__photo">
+						<img src="" alt="" class="question__picture" id="js-questionPhoto">
+					</div>
 				</div>
 
 				<div class="result -hidden" id="js-result">
 					<div class="result__info">
 						<h3 class="title" id="js-resultTitle"></h3>
 						<p class="text" id="js-resultDesc"></p>
+					</div>
 
+					<div class="result__photo">
 						<img src="" alt="Картинка с результатом" class="result__img" id="js-resultImg">
 					</div>
 					
-					<button class="button" id="js-restart" onclick="restartTest()">Пройти тест заново</button>
-					<div class="div" id="js-resultShare"></div>
+					<div class="result__buttons">
+						<button class="button" id="js-restart" onclick="restartTest()">Пройти тест заново</button>
+					<div class="button" id="js-resultShare"></div>
+					<!-- </div> -->
 
-				</div>
-
-				<div class="animation">
-					<img src="./assets/img/ball.jpg" alt="Ball" class="ball">
-					<div class="goal">
-						<div class="beam">
-							<div class="net"></div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>

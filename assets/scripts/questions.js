@@ -1,6 +1,7 @@
 const questions = [
 	{
 		questionText: 'Насколько сильно вы любите побеждать?',
+		image: './assets/img/1st.jpg',
 		answers: [
 			{
 				answerText: 'Очень, победа есть цель состязания',
@@ -23,6 +24,7 @@ const questions = [
 
 	{
 		questionText: 'Насколько вы умеете играть на команду?',
+		image: './assets/img/2nd.jpg',
 		answers: [
 			{
 				answerText: 'Мячик можно подержать и подольше',
@@ -45,6 +47,7 @@ const questions = [
 
 	{
 		questionText: 'Как часто вы ездите на игры?',
+		image: './assets/img/3rd.jpg',
 		answers: [
 			{
 				answerText: 'Приезжаю на каждую игру',
@@ -67,6 +70,7 @@ const questions = [
 
 	{
 		questionText: 'Как вы ведёте себя во время матча?',
+		image: './assets/img/4th.jpg',
 		answers: [
 			{
 				answerText: 'Уважительно, не толкаюсь не спорю',
@@ -89,6 +93,7 @@ const questions = [
 
 	{
 		questionText: 'Как часто вы забиваете?',
+		image: './assets/img/5th.jpg',
 		answers: [
 			{
 				answerText: 'Раз в 5 игр',
@@ -110,23 +115,24 @@ const questions = [
 	},
 
 	{
-		questionText: 'И последний вопрос. Вам понравился опрос?',
+		questionText: 'На какой позиции вы играете?',
+		image: './assets/img/6th.jpg',
 		answers: [
 			{
-				answerText: 'Да, неплохой, проходить было интересно',
+				answerText: 'Нападающий',
 				value: 3,
 			},
 			{
-				answerText: 'Нет, опрос скучный и неинтересный',
-				value: 0,
+				answerText: 'Полузащитник',
+				value: 2,
 			},
 			{
-				answerText: 'Да, но он нуждатся в доработке',
+				answerText: 'Защитник',
 				value: 1,
 			},
 			{
-				answerText: 'Я же 100 раз повторил, что не приезжаю...',
-				value: -1,
+				answerText: 'Вратарь',
+				value: 0,
 			},
 		]
 	},

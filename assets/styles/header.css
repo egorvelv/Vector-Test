@@ -1,5 +1,5 @@
 .header {
-	height: 60px;
+	height: 15%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -8,8 +8,12 @@
 	width: 75.5%;
 }
 
+.header__logo {
+	width: 12.5%;
+}
+
 .logo {
-	max-width: 7%;
+	max-width: 100%;
 }
 
 .header__link {
